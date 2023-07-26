@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+div
+{
+     height:300px;
+     width:250px;
+     border :2px inset black;
+     border-radius:5px;
+     margin-left:300px;
+     margin-top:30px;
+     padding-left:20px;
+     padding-top:30px;
+   
+}
+#a
+{
+text-align:center;
+color:red;
+font-family:cursive;
+}
+*
+{
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiXT0_ZQ8_JhX_MpyX1vWolfPqsuWXntDnp5IWm91nKj8PSGM-guvf5GnfHFI_Z7zQuBw&usqp=CAU);
+   background-repeat:no-repeat;
+     background-position:bottom;
+     background-size:100%;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>addLessons ||PAGE</title>
+</head>
+<body>
+<h3 id=a>Lessons added to the course</h3>
+<div>
+
+<form action="/addLesson" method="post">
+ <label style="color:blue">courseID:</label><br>
+ <input type="id" name="courseID"><br>
+ <label style="color:blue">lessonID:</label><br>
+ <input type="text" name="lessonID"><br>
+ <label style="color:blue">lessonName:</label><br>
+ <input type="text" name="lessonName"><br>
+ <label style="color:blue">lessonTopics:</label>
+ <input type="text" name="lessonTopics"><br>
+  <label style="color:blue">lessonLinks:</label><br>
+ <input type="text" name="lessonLinks"><br>
+  </label><br>
+<input type="submit" value="addLesson">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#b
+{
+     height:250px;
+     width:250px;
+     border :2px solid pink;
+     margin-left:300px;
+     margin-top:30px;
+     padding-left:20px;
+     padding-top:30px;
+  
+}
+#a
+{
+text-align:center;
+color:yellow;
+font-family:cursive;
+}
+*
+{
+  background-color: #d5f4e6;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Course details</title>
+</head>
+<body>
+
+<div id=b>
+<h3 id=a>Course details added</h3>
+<form action="/addCourse" method="post">
+ <label style="color:red">courseID:</label><br>
+ <input type="id" name="courseID">
+ <label style="color:red">courseName:</label>
+ <input type="text" name="courseName"><br>
+ <label style="color:red">coursePrice:</label>
+ <input type="text" name="coursePrice"><br>
+  </label><br>
+<input type="submit" value="AddCourse">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+div
+{
+     height:250px;
+     width:250px;
+     border :2px solid  black;
+     border-radius:10px;
+     box-shadow: 10px 10px 5px black;
+     margin-left:300px;
+     padding-left:20px;
+     padding-top:30px;
+     background-color:yellow;
+}
+#a
+{
+color:red;
+text-align:center;
+}
+*
+{
+   background-image:url(https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials.jpg);
+   background-repeat:norepeat;
+   background-postion:bottom;
+   
+}
+
+</style>
+<meta charset="ISO-8859-1">
+<title>Registration page</title>
+</head>
+<body>
+
+<h3 id=a>Registration Page</h3>
+<div>
+<form action="/addUser" method="post">
+ <label style="color:red">Name:</label>
+ <input type="text" name="name"><br><br>
+ <label style="color:red">Email:</label>
+ <input type="email" name="email"><br><br>
+ <label style="color:red">Password:</label>
+ <input type="password" name="password"><br><br>
+ <label style="color:red">Role:</label>
+  <input class="form-check-input" type="radio" name="role" id="flexRadioDefault1" value="student">
+  <label class="form-check-label" for="flexRadioDefault1">
+    student
+  </label>
+<input class="form-check-input" type="radio" name="role" id="flexRadioDefault2" value="trainer">
+  <label class="form-check-label" for="flexRadioDefault2">
+    Trainer
+  </label><br><br>
+<input type="submit" value="submit">
+</form>
+<h5 style="color:red">if you already registerd : <a href="/login" style="color:yellow">click_here</a></h5>
+
+
+</div>
+</body>
+</html>

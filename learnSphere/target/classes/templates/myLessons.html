@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+div
+{
+ text-align:center;
+}
+#a
+{
+margin-right:550px;
+margin-bottom:30px;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div >
+<table class="table table-success table-striped table-bordered w-50" border="1">
+<thead>
+<tr>
+
+<th scope="col">lessonID</th>
+<th scope="col">lessonName</th>
+<th scope="col">lessonTopics</th>
+<th scope="col">lessonLinks</th>
+<th scope="col">courseID</th>
+</tr>
+
+</thead>
+<tbody>
+<tr >
+<td th:text="${lesson.lessonID}"></td>
+<td th:text="${lesson.lessonName}"></td>
+<td th:text="${lesson.lessonTopics}"></td>
+<td th:text="${lesson.lessonLinks}"></td>
+<td th:text="${lesson.Course.courseID}"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<br><br>
+<div id=a>
+<iframe width="260" height="260" src="https://www.youtube.com/embed/cFBRawYov00"
+ title="YouTube video player" frameborder="1" 
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+ allowfullscreen></iframe>
+
+</div>
+
+<div>
+<h2>Leave comment hear</h2>
+<form action="/addC" method="post">
+<textarea name="comment"></textarea>
+<input type="submit" value="addcomment">
+
+</form>
+
+</div>
+<div>
+<h2>Comments</h2>
+</div>
+</body>
+
+</html>
